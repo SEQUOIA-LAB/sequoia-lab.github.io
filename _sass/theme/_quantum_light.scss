@@ -1,0 +1,55 @@
+/* --- Quantum Light Theme --- */
+
+$background-color: #f8f9fa;
+$text-color: #212529;
+$primary-color: #0d6efd;
+$link-color: #0d6efd;
+$link-color-hover: #0a58ca;
+$border-color: #dee2e6;
+$box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+
+body {
+  background-color: $background-color;
+  color: $text-color;
+}
+
+a {
+  color: $link-color;
+  &:hover {
+    color: $link-color-hover;
+  }
+}
+
+.masthead {
+  background-color: $primary-color;
+  .masthead__inner-wrap {
+    .masthead__menu-button {
+      background-color: transparent;
+      border: 1px solid #fff;
+      color: #fff;
+    }
+  }
+}
+
+.greedy-nav {
+  .nav-label {
+    color: #fff;
+  }
+  a {
+    color: #fff;
+    &:hover {
+      color: rgba(255, 255, 255, 0.8);
+    }
+  }
+}
+
+.page {
+  .page__inner-wrap {
+    box-shadow: $box-shadow;
+  }
+}
+
+.page__footer {
+  background-color: $primary-color;
+  color: #fff;
+}
