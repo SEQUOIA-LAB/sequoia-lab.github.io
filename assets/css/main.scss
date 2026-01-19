@@ -44,3 +44,49 @@ $navicon-height: 0.25rem;
     "vendor/font-awesome/solid",
     "vendor/font-awesome/brands"
 ;
+
+/* Custom Flat Design Overrides */
+html, body {
+  background-color: #fff !important;
+}
+
+.page, .archive, .page__content, .page__inner-wrap, .page__related, .masthead, .page__footer, .author__profile {
+  box-shadow: none !important;
+  border: none !important;
+  background: #fff !important;
+}
+
+/* Publication Badges */
+.archive__item-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.archive__item-venue {
+  min-width: 80px;
+  margin-right: 15px;
+  padding-top: 5px;
+}
+
+.venue-badge {
+  display: block;
+  padding: 5px;
+  border-radius: 4px;
+  text-align: center;
+  color: white !important;
+  font-weight: bold;
+  font-size: 0.8em;
+  background-color: #777; /* Default */
+  text-decoration: none;
+  border-bottom: none !important;
+}
+
+/* Venue Colors - Add more as needed */
+.badge-isca { background-color: #900C3F; }
+.badge-micro { background-color: #016A70; }
+.badge-asplos { background-color: #004225; }
+.badge-hpca { background-color: #79155B; }
+.badge-icml { background-color: #6A5ACD; }
+.badge-arxiv { background-color: #3D90D7; }
+.badge-cvpr { background-color: #1e3799; }
+.badge-neurips { background-color: #b71540; }

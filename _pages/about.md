@@ -1,12 +1,16 @@
 ---
 permalink: /
-title: "About Me"
+title: "Sequoia Lab"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
+Welcome to the Sequoia Lab at the University of California, Merced. We focus on the intersection of computer security, quantum computing, and machine learning systems.
+
+About Me
+======
 I am an Assistant Professor at the University of California, Merced.
 
 Research Interests

@@ -10,3 +10,6 @@ end
 
 gem 'github-pages'
 gem 'connection_pool', '2.5.0'
+gem 'faraday-retry'
+gem 'wdm', '>= 0.1.0' if Gem.win_platform?
+gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
