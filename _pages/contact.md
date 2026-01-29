@@ -4,7 +4,7 @@ title: "Contact"
 author_profile: false
 ---
 
-For any inquiries, please contact Professor Qian Wang at [qwang@ucmerced.edu](mailto:qwang@ucmerced.edu).
+For any inquiries, please contact Professor Qian Wang at [qianwang@ucmerced.edu](mailto:qianwang@ucmerced.edu).
 
 Our lab is located at:
 
