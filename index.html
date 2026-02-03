@@ -3,222 +3,243 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>YuCCA Lab - Home</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
 <script>
         tailwind.config = {
             darkMode: "class",
             theme: {
                 extend: {
                     colors: {
-                        primary: "#002855", // Deep blue/navy typically used in academia
-                        secondary: "#D29F13", // Gold accent from the screenshots
+                        primary: "#002855", // UC Merced Navy Blue
+                        secondary: "#DAA900", // UC Merced Gold
                         "background-light": "#ffffff",
-                        "background-dark": "#121212",
-                        "surface-light": "#f8f9fa",
-                        "surface-dark": "#1e1e1e",
-                        "text-light": "#333333",
-                        "text-dark": "#e0e0e0",
-                        "muted-light": "#666666",
-                        "muted-dark": "#a0a0a0",
-                        "border-light": "#e5e7eb",
-                        "border-dark": "#333333",
+                        "background-dark": "#1a202c",
+                        "text-light": "#1a202c",
+                        "text-dark": "#e2e8f0",
+                        "card-light": "#ffffff",
+                        "card-dark": "#2d3748",
                     },
                     fontFamily: {
-                        display: ["Roboto", "sans-serif"],
-                        body: ["Roboto", "sans-serif"],
-                    },
-                    borderRadius: {
-                        DEFAULT: "0.375rem",
+                        sans: ["Inter", "sans-serif"],
                     },
                 },
             },
         };
     </script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <style>
-        .hero-bg {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://lh3.googleusercontent.com/aida-public/AB6AXuCJaHuHhwoyA_xGNf_hhwKAREJojpJei1H-OQRjO_eGifwuFSOt8J3vN_lHprw8Uj5jr8OdfkIL0o9iwRbE_2FaiDtVh7D86dYdRWpvarQipti78W8dqovb7EvsoVPuZcoAFY78wzqxM7ISKjIlmZMGtacFDU92G2ihs0ZRjOutqXqCi9VJMG6eQeu3QDrL5MVNVj5P479CjXpDxXROm20Ow9TUia5IdBBSyWQlde8wXS8YK1WHgLZ8o4NlQteKt-BBmGOuQdlizs8);
-            background-size: cover;
-            background-position: center
-        }
+        body { font-family: 'Inter', sans-serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
     </style>
 </head>
-<body class="bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark font-body antialiased transition-colors duration-200 flex flex-col min-h-screen">
-<header class="relative w-full">
-<div class="hero-bg h-64 md:h-80 w-full flex items-center justify-center relative">
-<div class="container mx-auto px-4 md:px-8 text-center md:text-left md:items-end md:flex h-full pb-10">
-<div class="text-white drop-shadow-md">
-<h1 class="text-4xl md:text-5xl font-bold mb-2 tracking-tight">YuCCA Lab</h1>
-<p class="text-lg md:text-xl font-light tracking-wide">Yu's Cognitive Computing and Automation Lab</p>
-<p class="text-sm md:text-base opacity-90 mt-1">University of California, Merced</p>
+<body class="bg-gray-50 dark:bg-background-dark text-text-light dark:text-text-dark flex flex-col min-h-screen">
+<header class="relative w-full h-80 bg-gray-900 overflow-hidden shrink-0">
+<div class="absolute inset-0">
+<img alt="University Campus Landscape" class="w-full h-full object-cover opacity-80" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFBQEgZXj_ah3e0ToCcnzUH-935Y4Iqnoy9nCY94N5u2gslj9Nwt5ZLtnkJGco7j10mp6KqViZjGZob-WzmbRbuF5GrIEeGxwrKhPOB96LXJEm5_SDo1dwYxyQE7SS0R09NUblsZx0VNWriUcNoPg5nHp9CvExkIjyWHbShGCwugyIwCfxURH4n9GaeZJpIaS75XW9sI94KzZKpNwJ5PhL_GYeZ3rca9m8vZA9z9t0zdjbz-xxOSTbypzfm7th_JhYaFzsfL8d8RI"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-black/30 mix-blend-multiply"></div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col justify-end pb-12">
+<h1 class="text-5xl md:text-7xl font-bold text-white mb-2 tracking-tight drop-shadow-lg">YuCCA Lab</h1>
+<p class="text-xl md:text-2xl text-white/95 font-light drop-shadow-md border-l-4 border-secondary pl-4">Yu's Cognitive Computing and Automation Lab</p>
+<p class="text-lg md:text-xl text-secondary font-medium mt-2 pl-4 drop-shadow-sm uppercase tracking-wider">University of California, Merced</p>
+</div>
+</header>
+<nav class="bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700 sticky top-0 z-50 shadow-md">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-start space-x-1 md:space-x-2 overflow-x-auto no-scrollbar">
+<a class="px-5 py-4 text-sm font-semibold text-white bg-primary border-b-4 border-secondary transition-colors" href="index.html">Home</a>
+<a class="px-5 py-4 text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-white hover:bg-blue-50 dark:hover:bg-gray-700 transition-colors" href="publications.html">Publications</a>
+<a class="px-5 py-4 text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-white hover:bg-blue-50 dark:hover:bg-gray-700 transition-colors" href="members.html">Members</a>
+<a class="px-5 py-4 text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-white hover:bg-blue-50 dark:hover:bg-gray-700 transition-colors" href="join.html">Join Us</a>
+<a class="px-5 py-4 text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-white hover:bg-blue-50 dark:hover:bg-gray-700 transition-colors" href="misc.html">Miscellaneous</a>
+</div>
+</div>
+</nav>
+<main class="flex-grow max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-16">
+<section class="space-y-6 text-center">
+<p class="text-xl text-gray-700 dark:text-gray-300 leading-relaxed max-w-4xl mx-auto">
+            Welcome to the <span class="font-bold text-primary dark:text-blue-300">Yu's Cognitive Computing and Automation Lab (YuCCA Lab)</span> at the <span class="font-bold text-gray-900 dark:text-white">University of California, Merced</span>!
+        </p>
+</section>
+<section class="space-y-6">
+<div class="flex items-center space-x-3 mb-4 border-b border-gray-200 dark:border-gray-700 pb-2">
+<span class="material-symbols-outlined text-primary dark:text-secondary text-4xl">psychology</span>
+<h2 class="text-3xl font-bold text-primary dark:text-white">Research Focus</h2>
+</div>
+<div class="grid md:grid-cols-3 gap-8 items-start">
+<div class="md:col-span-2 space-y-4">
+<p class="text-gray-700 dark:text-gray-300 leading-relaxed text-lg">
+                    The <span class="font-semibold text-primary dark:text-white">YuCCA Lab</span>, led by <a class="text-secondary dark:text-yellow-400 font-medium hover:underline" href="members.html">Dr. Xiaofan Yu</a>, works on impactful research problems to push the boundaries of <span class="font-semibold text-primary dark:text-white">edge computing</span> and <span class="font-semibold text-primary dark:text-white">intelligent embedded systems</span>.
+                </p>
+<p class="text-gray-700 dark:text-gray-300 leading-relaxed text-lg">
+                    Our research sits at the intersection of <span class="font-semibold text-gray-900 dark:text-white">edge AI, embedded systems</span>, and <span class="font-semibold text-gray-900 dark:text-white">real-world cyber-physical applications</span>. We co-design edge AI algorithms and embedded systems to build intelligent edge platforms that can perceive, reason, and act autonomously in real-world environments despite limited computing, memory, and energy resources.
+                </p>
+</div>
+<div class="bg-blue-50 dark:bg-blue-900/20 border border-blue-100 dark:border-blue-900 rounded-lg p-5 shadow-sm relative overflow-hidden">
+<div class="absolute top-0 right-0 w-16 h-16 bg-secondary/10 rounded-bl-full -mr-4 -mt-4"></div>
+<h3 class="text-primary dark:text-blue-300 font-bold mb-2 flex items-center">
+<span class="material-symbols-outlined mr-2">group_add</span> Join the Lab
+                </h3>
+<p class="text-gray-800 dark:text-gray-200 text-sm mb-3">
+                    We are recruiting two Ph.D. students (starting Fall 2026) and multiple Research Assistants (starting anytime).
+                </p>
+<a class="inline-flex items-center text-sm font-bold text-secondary hover:text-primary transition-colors" href="join.html">
+                    Learn more <span class="material-symbols-outlined text-sm ml-1">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+<section class="space-y-8">
+<div class="flex items-center space-x-3 mb-4 border-b border-gray-200 dark:border-gray-700 pb-2">
+<span class="material-symbols-outlined text-primary dark:text-secondary text-4xl">precision_manufacturing</span>
+<h2 class="text-3xl font-bold text-primary dark:text-white">Active Projects</h2>
+</div>
+<div class="grid gap-8">
+<div class="bg-white dark:bg-card-dark rounded-xl shadow-sm border border-gray-200 dark:border-border-dark overflow-hidden hover:shadow-lg transition-all duration-300 group">
+<div class="md:flex">
+<div class="md:w-1/3 bg-gray-50 dark:bg-gray-800 p-8 flex items-center justify-center border-r border-gray-100 dark:border-gray-700 group-hover:bg-blue-50 dark:group-hover:bg-gray-750 transition-colors">
+<span class="material-symbols-outlined text-7xl text-gray-400 group-hover:text-primary transition-colors">settings_input_component</span>
+</div>
+<div class="p-8 md:w-2/3">
+<h3 class="text-xl font-bold text-primary dark:text-blue-300 mb-3 group-hover:text-secondary transition-colors">Multimodal Large Language Models for Autonomous Systems</h3>
+<p class="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
+                            Developing next-generation autonomous systems powered by Large Language Models (LLMs) that can understand and act on multimodal sensor inputs such as images, LiDAR, radar and IMUs. These projects aim to reduce LLM hallucinations when interpreting sensor data and improving the overall efficiency of system operation.
+                        </p>
+<div class="flex items-center gap-2 text-sm border-t border-gray-100 dark:border-gray-700 pt-4">
+<span class="font-semibold text-gray-900 dark:text-white flex items-center"><span class="material-symbols-outlined text-base mr-1">article</span> Publications:</span>
+<div class="flex gap-2">
+<a class="text-blue-600 dark:text-blue-400 hover:underline bg-blue-50 dark:bg-blue-900/30 px-2 py-0.5 rounded" href="publications.html">IMWUT'25</a>
+<a class="text-blue-600 dark:text-blue-400 hover:underline bg-blue-50 dark:bg-blue-900/30 px-2 py-0.5 rounded" href="publications.html">SenSys'25</a>
+<a class="text-blue-600 dark:text-blue-400 hover:underline bg-blue-50 dark:bg-blue-900/30 px-2 py-0.5 rounded" href="publications.html">MASS'25</a>
 </div>
 </div>
 </div>
-<nav class="bg-surface-light dark:bg-surface-dark border-b border-gray-200 dark:border-gray-700 shadow-sm sticky top-0 z-50">
-<div class="container mx-auto px-4 md:px-8">
-<ul class="flex flex-wrap justify-center md:justify-start space-x-1 md:space-x-2 py-0">
-<li>
-<a class="block px-4 py-4 text-sm font-bold text-primary dark:text-white border-b-4 border-secondary bg-gray-50 dark:bg-gray-800 transition-colors" href="index.html">Home</a>
+</div>
+</div>
+<div class="bg-white dark:bg-card-dark rounded-xl shadow-sm border border-gray-200 dark:border-border-dark overflow-hidden hover:shadow-lg transition-all duration-300 group">
+<div class="md:flex">
+<div class="md:w-1/3 bg-gray-50 dark:bg-gray-800 flex items-center justify-center border-r border-gray-100 dark:border-gray-700 overflow-hidden">
+<img alt="Agricultural Robot in Field" class="w-full h-full object-cover min-h-[200px] group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJ1mamhtA6ArItf4mSbWMYjt09gsOncUnxKCh-qmBQmKv_fpsM1xrbR_r5Rw0DfhK-YUevynRlABFNsH-Bk5fnqbGuigelDijQaTHiB9a9eKiRJD_Idrvf6Xzsh6QdwE-d5lg-86EGwBwR3aSOoJx8l8sW8SpkKPrsfoYb3Jv5lm3T4Y0x0KsFrUFeIoMl7SxytyY1oQpbSnG7mHjIVCPuGZCnVM4_Ztcnup-_bZQm2Vd1PU1Ui_2-LzinnNEsWPhpl4yU2PLqXK8"/>
+</div>
+<div class="p-8 md:w-2/3">
+<h3 class="text-xl font-bold text-primary dark:text-blue-300 mb-3 group-hover:text-secondary transition-colors">Intelligent Agricultural Robotics Systems</h3>
+<p class="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
+                            Designing intelligent and efficient embedded systems for real-world agricultural applications. These projects aim to bridge the gap between modern AI technologies and practical farming needs, enabling autonomous robots to assist with tasks such as crop monitoring, harvesting, and field management.
+                        </p>
+<div class="flex items-center gap-2 text-sm border-t border-gray-100 dark:border-gray-700 pt-4">
+<span class="font-semibold text-gray-900 dark:text-white flex items-center"><span class="material-symbols-outlined text-base mr-1">article</span> Publications:</span>
+<div class="flex gap-2">
+<a class="text-blue-600 dark:text-blue-400 hover:underline bg-blue-50 dark:bg-blue-900/30 px-2 py-0.5 rounded" href="publications.html">arXiv'25</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-white dark:bg-card-dark rounded-xl shadow-sm border border-gray-200 dark:border-border-dark overflow-hidden hover:shadow-lg transition-all duration-300 group">
+<div class="md:flex">
+<div class="md:w-1/3 bg-gray-50 dark:bg-gray-800 flex items-center justify-center border-r border-gray-100 dark:border-gray-700 overflow-hidden relative">
+<img alt="Abstract Brain Diagram" class="w-full h-full object-cover min-h-[200px] opacity-90 group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCuWQmUXtwgUuqdpyFv_6ZFmppo2DUuIVKDmXMza2OJ8wkePqVT1WM3viPNYiEK3EjIjw4G_j8pw-5qy0bNe4X4CIXRb9ow4__O6AjKT3OkfctfC9e1HvQdbS3CSF9D8f8l7azmK748uUsjLAljJoMHruqe79COlvCzf7n_Bf1_4Nb5zBppO76wi-d_EUEvbkAi7sQhEAhwvBCa1hcNDjO2SKg548WZjuCSoavYwmVVB8ZTwVGBwZyljPd8eP9FNJJCGqLncFglKE4"/>
+<div class="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors"></div>
+</div>
+<div class="p-8 md:w-2/3">
+<h3 class="text-xl font-bold text-primary dark:text-blue-300 mb-3 group-hover:text-secondary transition-colors">Hyperdimensional Computing: Algorithms, Systems and Hardware</h3>
+<p class="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
+                            Advancing neuromorphic and cognitive-inspired computing paradigms (e.g., Hyperdimensional Computing) for next-generation efficient AI on emerging systems and hardware. These projects focus on bridging the gap between Hyperdimensional Computing and real-world cyber-physical applications.
+                        </p>
+<div class="flex items-center gap-2 text-sm border-t border-gray-100 dark:border-gray-700 pt-4 flex-wrap">
+<span class="font-semibold text-gray-900 dark:text-white flex items-center"><span class="material-symbols-outlined text-base mr-1">article</span> Publications:</span>
+<div class="flex flex-wrap gap-2">
+<a class="text-blue-600 dark:text-blue-400 hover:underline bg-blue-50 dark:bg-blue-900/30 px-2 py-0.5 rounded" href="publications.html">AAAI'25</a>
+<a class="text-blue-600 dark:text-blue-400 hover:underline bg-blue-50 dark:bg-blue-900/30 px-2 py-0.5 rounded" href="publications.html">DATE'25</a>
+<span class="text-gray-400 text-xs py-0.5 ml-1 italic">+5 others</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="space-y-6">
+<div class="flex items-center space-x-3 mb-4 border-b border-gray-200 dark:border-gray-700 pb-2">
+<span class="material-symbols-outlined text-primary dark:text-secondary text-4xl">newspaper</span>
+<h2 class="text-3xl font-bold text-primary dark:text-white">Recent News</h2>
+</div>
+<div class="bg-white dark:bg-card-dark rounded-xl shadow-sm border border-gray-200 dark:border-border-dark p-6">
+<ul class="space-y-4">
+<li class="flex items-start gap-4">
+<span class="inline-flex items-center justify-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-secondary/10 text-yellow-700 dark:text-yellow-400 border border-secondary/20 min-w-[60px]">11/25</span>
+<span class="text-gray-700 dark:text-gray-300">One paper accepted at <span class="font-bold text-primary dark:text-blue-300">WACV'26</span>!</span>
 </li>
-<li>
-<a class="block px-4 py-4 text-sm font-medium text-text-light dark:text-text-dark hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-primary dark:hover:text-white transition-colors" href="publications.html">Publications</a>
+<li class="flex items-start gap-4">
+<span class="inline-flex items-center justify-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-secondary/10 text-yellow-700 dark:text-yellow-400 border border-secondary/20 min-w-[60px]">10/25</span>
+<span class="text-gray-700 dark:text-gray-300">Xiaofan gave an invited talk at <a class="text-blue-600 dark:text-blue-400 hover:underline font-medium" href="#">WINLAB, Rutgers University</a>!</span>
 </li>
-<li>
-<a class="block px-4 py-4 text-sm font-medium text-text-light dark:text-text-dark hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-primary dark:hover:text-white transition-colors" href="members.html">Members</a>
+<li class="flex items-start gap-4">
+<span class="inline-flex items-center justify-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-secondary/10 text-yellow-700 dark:text-yellow-400 border border-secondary/20 min-w-[60px]">08/25</span>
+<span class="text-gray-700 dark:text-gray-300">One paper accepted at <span class="font-bold text-primary dark:text-blue-300">MASS'25</span>!</span>
 </li>
-<li>
-<a class="block px-4 py-4 text-sm font-medium text-text-light dark:text-text-dark hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-primary dark:hover:text-white transition-colors" href="join.html">Join Us</a>
+<li class="flex items-start gap-4">
+<span class="inline-flex items-center justify-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-secondary/10 text-yellow-700 dark:text-yellow-400 border border-secondary/20 min-w-[60px]">07/25</span>
+<span class="text-gray-700 dark:text-gray-300">One paper accepted at <span class="font-bold text-primary dark:text-blue-300">IMWUT'25/UbiComp'25</span>!</span>
 </li>
-<li>
-<a class="block px-4 py-4 text-sm font-medium text-text-light dark:text-text-dark hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-primary dark:hover:text-white transition-colors" href="#">Miscellaneous</a>
+<li class="flex items-start gap-4">
+<span class="inline-flex items-center justify-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-secondary/10 text-yellow-700 dark:text-yellow-400 border border-secondary/20 min-w-[60px]">07/25</span>
+<span class="text-gray-700 dark:text-gray-300">Xiaofan is invited to serve as a TPC member of <a class="text-blue-600 dark:text-blue-400 hover:underline font-medium" href="#">ASP-DAC'26</a>!</span>
+</li>
+<li class="flex items-start gap-4">
+<span class="inline-flex items-center justify-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-secondary/10 text-yellow-700 dark:text-yellow-400 border border-secondary/20 min-w-[60px]">07/25</span>
+<span class="text-gray-700 dark:text-gray-300">Xiaofan joined UC Merced EE!</span>
 </li>
 </ul>
 </div>
-</nav>
-</header>
-<main class="container mx-auto px-4 md:px-8 py-10 max-w-5xl flex-grow">
-<section class="mb-12">
-<h2 class="text-3xl font-bold text-primary dark:text-white mb-6">Publications</h2>
-<p class="text-muted-light dark:text-muted-dark leading-relaxed mb-2 text-lg">
-                Our research has been published in leading conferences and journals on embedded AI, sensor systems and design automation.
-            </p>
-<p class="text-sm text-muted-light dark:text-muted-dark italic">
-                (<sup>*</sup> Equal contribution)
-            </p>
-</section>
-<section class="mb-12">
-<h3 class="text-2xl font-bold text-primary dark:text-white mb-6 border-b-2 border-secondary pb-2 inline-block w-full">2026</h3>
-<div class="bg-white dark:bg-surface-dark border border-border-light dark:border-border-dark rounded-lg p-5 shadow-sm hover:shadow-md transition mb-6 flex flex-col md:flex-row gap-4 group">
-<div class="flex-shrink-0">
-<span class="inline-block bg-primary text-white text-xs font-bold px-2 py-1 rounded shadow-sm w-20 text-center">WACV'26</span>
-</div>
-<div class="flex-grow">
-<h4 class="text-lg font-bold text-primary dark:text-white mb-1 group-hover:text-secondary transition-colors">
-                        SurgXBench: Explainable Vision-Language Model Benchmark for Surgery
-                    </h4>
-<p class="text-sm text-muted-light dark:text-muted-dark mb-1">
-                        Jiajun Cheng, Xianwu Zhao, Sainan Liu, <span class="font-bold text-primary dark:text-white">Xiaofan Yu</span>, Ravi Prakash, Patrick J. Codd, Jonathan Elliott Katz, Shan Lin
-                    </p>
-<p class="text-sm text-gray-500 dark:text-gray-400 italic">
-                        Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)
-                    </p>
-</div>
-</div>
-</section>
-<section class="mb-12">
-<h3 class="text-2xl font-bold text-primary dark:text-white mb-6 border-b-2 border-secondary pb-2 inline-block w-full">2025</h3>
-<div class="bg-white dark:bg-surface-dark border border-border-light dark:border-border-dark rounded-lg p-5 shadow-sm hover:shadow-md transition mb-6 flex flex-col md:flex-row gap-4 group">
-<div class="flex-shrink-0">
-<span class="inline-block bg-secondary text-white text-xs font-bold px-2 py-1 rounded shadow-sm w-20 text-center">2025</span>
-</div>
-<div class="flex-grow">
-<h4 class="text-lg font-bold text-primary dark:text-white mb-1 group-hover:text-secondary transition-colors">
-                        DroneFL: Federated Learning for Multi-UAV Visual Target Tracking
-                    </h4>
-<p class="text-sm text-muted-light dark:text-muted-dark mb-1">
-<span class="font-bold text-primary dark:text-white">Xiaofan Yu</span>, Yuwei Wu, Katherine Mao, Ye Tian, Vijay Kumar, Tajana Rosing
-                    </p>
-<p class="text-sm text-gray-500 dark:text-gray-400 italic">
-                        arXiv preprint arXiv:2509.21523
-                    </p>
-</div>
-</div>
-<div class="bg-white dark:bg-surface-dark border border-border-light dark:border-border-dark rounded-lg p-5 shadow-sm hover:shadow-md transition mb-6 flex flex-col md:flex-row gap-4 group">
-<div class="flex-shrink-0">
-<span class="inline-block bg-primary text-white text-xs font-bold px-2 py-1 rounded shadow-sm w-20 text-center">IMWUT'25</span>
-</div>
-<div class="flex-grow">
-<h4 class="text-lg font-bold text-primary dark:text-white mb-1 group-hover:text-secondary transition-colors">
-                        SensorChat: Answering Qualitative and Quantitative Questions during Long-Term Multimodal Sensor Interactions
-                    </h4>
-<p class="text-sm text-muted-light dark:text-muted-dark mb-1">
-<span class="font-bold text-primary dark:text-white">Xiaofan Yu</span>, Lanxiang Hu, Benjamin Reichman, Dylan Chu, Rushil Chandrupatla, Xiyuan Zhang, Larry Heck, Tajana Rosing
-                    </p>
-<p class="text-sm text-gray-500 dark:text-gray-400 italic mb-3">
-                        Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT)
-                    </p>
-<div class="flex gap-2">
-<a class="inline-flex items-center px-3 py-1 border border-primary/20 text-xs font-bold rounded text-primary dark:text-white bg-blue-50 dark:bg-primary/20 hover:bg-primary hover:text-white transition-colors" href="#">
-                            Code
-                        </a>
-<a class="inline-flex items-center px-3 py-1 border border-primary/20 text-xs font-bold rounded text-primary dark:text-white bg-blue-50 dark:bg-primary/20 hover:bg-primary hover:text-white transition-colors" href="#">
-                            Slides
-                        </a>
-</div>
-</div>
-</div>
-<div class="bg-white dark:bg-surface-dark border border-border-light dark:border-border-dark rounded-lg p-5 shadow-sm hover:shadow-md transition mb-6 flex flex-col md:flex-row gap-4 group">
-<div class="flex-shrink-0">
-<span class="inline-block bg-primary text-white text-xs font-bold px-2 py-1 rounded shadow-sm w-20 text-center">TIOT'25</span>
-</div>
-<div class="flex-grow">
-<h4 class="text-lg font-bold text-primary dark:text-white mb-1 group-hover:text-secondary transition-colors">
-                        Federated Hyperdimensional Computing: Comprehensive Analysis and Robust Communication
-                    </h4>
-<p class="text-sm text-muted-light dark:text-muted-dark mb-1">
-                        Yunhui Guo, <span class="font-bold text-primary dark:text-white">Xiaofan Yu</span>, Tajana Rosing
-                    </p>
-<p class="text-sm text-gray-500 dark:text-gray-400 italic mb-3">
-                        ACM Transactions on Internet of Things (TIOT)
-                    </p>
-</div>
-</div>
-<div class="bg-white dark:bg-surface-dark border border-border-light dark:border-border-dark rounded-lg p-5 shadow-sm hover:shadow-md transition mb-6 flex flex-col md:flex-row gap-4 group">
-<div class="flex-shrink-0">
-<span class="inline-block bg-primary text-white text-xs font-bold px-2 py-1 rounded shadow-sm w-20 text-center">MASS'25</span>
-</div>
-<div class="flex-grow">
-<h4 class="text-lg font-bold text-primary dark:text-white mb-1 group-hover:text-secondary transition-colors">
-                        Cost-Effective Resource Allocation for Edge AI using Multi-Agent Reinforcement Learning
-                    </h4>
-<p class="text-sm text-muted-light dark:text-muted-dark mb-1">
-                        Yifan Sun, <span class="font-bold text-primary dark:text-white">Xiaofan Yu</span>, Xiang Sun
-                    </p>
-<p class="text-sm text-gray-500 dark:text-gray-400 italic mb-3">
-                        IEEE International Conference on Mobile Ad-Hoc and Smart Systems (MASS)
-                    </p>
-<div class="flex gap-2">
-<a class="inline-flex items-center px-3 py-1 border border-primary/20 text-xs font-bold rounded text-primary dark:text-white bg-blue-50 dark:bg-primary/20 hover:bg-primary hover:text-white transition-colors" href="#">
-                            PDF
-                        </a>
-</div>
-</div>
-</div>
-<div class="bg-white dark:bg-surface-dark border border-border-light dark:border-border-dark rounded-lg p-5 shadow-sm hover:shadow-md transition mb-6 flex flex-col md:flex-row gap-4 group">
-<div class="flex-shrink-0">
-<span class="inline-block bg-primary text-white text-xs font-bold px-2 py-1 rounded shadow-sm w-20 text-center">SenSys'25</span>
-</div>
-<div class="flex-grow">
-<h4 class="text-lg font-bold text-primary dark:text-white mb-1 group-hover:text-secondary transition-colors">
-                        Demo: Real-Time Agricultural Robot Control via Edge-Cloud Collaboration
-                    </h4>
-<p class="text-sm text-muted-light dark:text-muted-dark mb-1">
-                        Zihao Li, <span class="font-bold text-primary dark:text-white">Xiaofan Yu</span>, Stefano Carpin
-                    </p>
-<p class="text-sm text-gray-500 dark:text-gray-400 italic mb-3">
-                        The 23rd ACM Conference on Embedded Networked Sensor Systems (SenSys)
-                    </p>
-</div>
-</div>
 </section>
 </main>
-<footer class="bg-primary text-white border-t-4 border-secondary py-10 mt-auto">
-<div class="container mx-auto px-4 md:px-8 text-center">
-<h5 class="text-xl font-bold mb-2 tracking-wide">YuCCA Lab</h5>
-<p class="text-sm text-gray-300 mb-4">Yu's Cognitive Computing and Automation Lab</p>
-<div class="text-xs text-gray-400 border-t border-white/20 pt-4 mt-4 w-48 mx-auto">
-<p>© 2026 YuCCA Lab.</p>
-<p>University of California, Merced</p>
+<footer class="bg-primary text-white py-12 border-t border-blue-900 mt-auto">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<div class="space-y-4">
+<h3 class="text-xl font-bold flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary">science</span>
+                    YuCCA Lab
+                </h3>
+<p class="text-blue-100/80 text-sm leading-relaxed">
+                    Yu's Cognitive Computing and Automation Lab.<br/>
+                    Researching Edge AI and Embedded Systems at the University of California, Merced.
+                </p>
+</div>
+<div class="space-y-4">
+<h3 class="text-lg font-bold text-secondary">Contact</h3>
+<address class="not-italic text-sm text-blue-100/80 space-y-3">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-lg mt-0.5">location_on</span>
+<span>
+                            University of California, Merced<br/>
+                            5200 North Lake Rd.<br/>
+                            Merced, CA 95343
+                        </span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-lg">email</span>
+<a class="hover:text-white hover:underline transition-colors" href="mailto:xyu@ucmerced.edu">xyu@ucmerced.edu</a>
+</div>
+</address>
+</div>
+<div class="space-y-4">
+<h3 class="text-lg font-bold text-secondary">Quick Links</h3>
+<ul class="space-y-2 text-sm text-blue-100/80">
+<li><a class="hover:text-white hover:underline transition-colors flex items-center" href="index.html"><span class="material-symbols-outlined text-xs mr-2">chevron_right</span>Research Projects</a></li>
+<li><a class="hover:text-white hover:underline transition-colors flex items-center" href="publications.html"><span class="material-symbols-outlined text-xs mr-2">chevron_right</span>Publications</a></li>
+<li><a class="hover:text-white hover:underline transition-colors flex items-center" href="members.html"><span class="material-symbols-outlined text-xs mr-2">chevron_right</span>Lab Members</a></li>
+<li><a class="hover:text-white hover:underline transition-colors flex items-center" href="join.html"><span class="material-symbols-outlined text-xs mr-2">chevron_right</span>Join Us</a></li>
+</ul>
+</div>
+</div>
+<div class="border-t border-blue-900/50 mt-10 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-blue-200/50">
+<p>© 2025 YuCCA Lab. All rights reserved.</p>
+<p class="mt-2 md:mt-0">University of California, Merced</p>
 </div>
 </div>
 </footer>
-<script>
-        // Simple script to toggle dark mode for demonstration if the user wants to test it manually via console or if we add a button later
-        // Currently relies on system preference or class addition to html tag.
-        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-            document.documentElement.classList.add('dark');
-        }
-    </script>
 
 </body></html>
