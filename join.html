@@ -2,10 +2,9 @@
 <html lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Join Us - YuCCA Lab</title>
+<title>Join Us - Sequoia Lab</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script>
         tailwind.config = {
@@ -13,8 +12,8 @@
             theme: {
                 extend: {
                     colors: {
-                        primary: "#002855", // Deep Navy Blue
-                        secondary: "#D1A300", // Gold accent color
+                        primary: "#002855", // UC Merced Navy Blue
+                        secondary: "#DAA900", // UC Merced Gold
                         "background-light": "#ffffff",
                         "background-dark": "#121212",
                         "surface-light": "#f8f9fa",
@@ -23,53 +22,29 @@
                         "text-dark": "#e0e0e0",
                     },
                     fontFamily: {
-                        display: ["Roboto", "sans-serif"],
-                        body: ["Roboto", "sans-serif"],
+                        display: ["Inter", "sans-serif"],
+                        body: ["Inter", "sans-serif"],
                     },
                     borderRadius: {
                         DEFAULT: "0.375rem",
                     },
-                    typography: (theme) => ({
-                        DEFAULT: {
-                            css: {
-                                color: theme('colors.text-light'),
-                                a: {
-                                    color: theme('colors.primary'),
-                                    '&:hover': {
-                                        color: theme('colors.secondary'),
-                                    },
-                                },
-                            },
-                        },
-                        dark: {
-                            css: {
-                                color: theme('colors.text-dark'),
-                                a: {
-                                    color: '#60a5fa', 
-                                    '&:hover': {
-                                        color: theme('colors.secondary'),
-                                    },
-                                },
-                                h1: { color: theme('colors.text-dark') },
-                                h2: { color: theme('colors.text-dark') },
-                                h3: { color: theme('colors.text-dark') },
-                                strong: { color: theme('colors.text-dark') },
-                            },
-                        },
-                    }),
                 },
             },
         };
     </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    </style>
 </head>
 <body class="bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark font-body antialiased transition-colors duration-200 flex flex-col min-h-screen">
 <header class="relative w-full">
 <div class="relative h-64 md:h-80 bg-gray-900 overflow-hidden">
-<img alt="University Campus Landscape" class="absolute inset-0 w-full h-full object-cover opacity-70" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFBQEgZXj_ah3e0ToCcnzUH-935Y4Iqnoy9nCY94N5u2gslj9Nwt5ZLtnkJGco7j10mp6KqViZjGZob-WzmbRbuF5GrIEeGxwrKhPOB96LXJEm5_SDo1dwYxyQE7SS0R09NUblsZx0VNWriUcNoPg5nHp9CvExkIjyWHbShGCwugyIwCfxURH4n9GaeZJpIaS75XW9sI94KzZKpNwJ5PhL_GYeZ3rca9m8vZA9z9t0zdjbz-xxOSTbypzfm7th_JhYaFzsfL8d8RI"/>
+<img alt="Sequoia Forest Landscape" class="absolute inset-0 w-full h-full object-cover opacity-70" src="https://images.unsplash.com/photo-1604537466158-719b1972feb8?w=1920&q=80"/>
 <div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/50 to-black/30"></div>
 <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col justify-end pb-10">
-<h1 class="text-4xl md:text-5xl font-bold text-white mb-2 tracking-tight drop-shadow-lg">YuCCA Lab</h1>
-<p class="text-lg md:text-xl text-white/95 font-light drop-shadow-md border-l-4 border-secondary pl-4">Yu's Cognitive Computing and Automation Lab</p>
+<h1 class="text-4xl md:text-5xl font-bold text-white mb-2 tracking-tight drop-shadow-lg">Sequoia Lab</h1>
+<p class="text-lg md:text-xl text-white/95 font-light drop-shadow-md border-l-4 border-secondary pl-4">Secure Quantum-era Integrated Architecture Lab</p>
 <p class="text-sm md:text-base text-secondary font-medium mt-1 pl-4 drop-shadow-sm">University of California, Merced</p>
 </div>
 </div>
@@ -94,12 +69,12 @@
 </div>
 <div class="bg-yellow-50 dark:bg-yellow-900/20 border-l-4 border-secondary p-6 rounded-r-lg mb-12 shadow-sm">
 <div class="flex items-start">
-<span class="material-icons text-secondary mr-3 mt-1 text-3xl">campaign</span>
+<span class="material-symbols-outlined text-secondary mr-3 mt-1 text-3xl">campaign</span>
 <div>
-<h3 class="font-bold text-lg text-gray-900 dark:text-white mb-1">Open Positions for Fall 2026</h3>
+<h3 class="font-bold text-lg text-gray-900 dark:text-white mb-1">Open Positions</h3>
 <p class="text-gray-800 dark:text-gray-200">
-                    We are actively recruiting <strong>two Ph.D. students</strong> (starting Fall 2026) and multiple Research Assistants (starting anytime). 
-                    If you are passionate about embedded AI, cyber-physical systems, and edge computing, we would love to hear from you.
+                    We are actively recruiting <strong>Ph.D. students</strong> and <strong>Research Assistants</strong> interested in post-quantum cryptography, hardware security, and quantum computing.
+                    If you are passionate about securing the future of computing, we would love to hear from you.
                 </p>
 </div>
 </div>
@@ -108,12 +83,12 @@
 <div class="lg:col-span-2 space-y-12">
 <section>
 <h3 class="text-2xl font-bold text-primary dark:text-blue-400 mb-6 flex items-center">
-<span class="material-icons mr-3">school</span> Prospective Ph.D. Students
+<span class="material-symbols-outlined mr-3">school</span> Prospective Ph.D. Students
                 </h3>
 <div class="prose dark:prose-invert max-w-none text-gray-700 dark:text-gray-300">
 <p>
-                        I am looking for self-motivated Ph.D. students who are interested in <strong>Embedded Systems</strong>, <strong>Edge AI</strong>, and <strong>Cyber-Physical Systems (CPS)</strong>.
-                        Prior experience in hardware design, embedded programming, or machine learning frameworks is highly preferred but not strictly required if you are a quick learner.
+                        I am looking for self-motivated Ph.D. students who are interested in <strong>Post-Quantum Cryptography</strong>, <strong>Hardware Security</strong>, and <strong>Quantum Computing Systems</strong>.
+                        Prior experience in cryptography implementation, FPGA/ASIC design, or side-channel analysis is highly preferred but not strictly required if you are a quick learner.
                     </p>
 <p>
                         Successful candidates will receive full financial support (tuition coverage + stipend).
@@ -121,14 +96,14 @@
 <div class="bg-white dark:bg-surface-dark border border-gray-200 dark:border-gray-700 rounded-lg p-6 mt-6 shadow-sm">
 <h4 class="text-lg font-semibold mb-4 text-primary dark:text-white">How to Apply</h4>
 <ol class="list-decimal pl-5 space-y-3 marker:text-primary dark:marker:text-blue-400">
-<li>Check my <a class="text-primary hover:text-secondary dark:text-blue-400 font-medium hover:underline" href="#">Research</a> and <a class="text-primary hover:text-secondary dark:text-blue-400 font-medium hover:underline" href="#">Publications</a> pages to see if your interests match the lab's direction.</li>
+<li>Check our <a class="text-primary hover:text-secondary dark:text-blue-400 font-medium hover:underline" href="index.html">Research</a> and <a class="text-primary hover:text-secondary dark:text-blue-400 font-medium hover:underline" href="publications.html">Publications</a> pages to see if your interests match the lab's direction.</li>
 <li>Send me an email with the subject line <strong>"[Prospective PhD] Your Name - University"</strong>.</li>
 <li>Attach your CV and transcripts.</li>
-<li>Briefly describe your research background and why you want to join YuCCA Lab.</li>
+<li>Briefly describe your research background and why you want to join Sequoia Lab.</li>
 </ol>
 </div>
 <div class="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg mt-6 text-sm border border-blue-100 dark:border-blue-800 flex items-start">
-<span class="material-icons text-blue-500 mr-2 text-base mt-0.5">info</span>
+<span class="material-symbols-outlined text-blue-500 mr-2 text-base mt-0.5">info</span>
 <div>
 <strong>Note:</strong> Due to the high volume of emails, I may not be able to reply to every inquiry. If you do not hear back within 2 weeks, please feel free to send a reminder or assume that there isn't a good match at this time. However, I read every email carefully.
                         </div>
@@ -138,15 +113,15 @@
 <hr class="border-gray-200 dark:border-gray-700"/>
 <section>
 <h3 class="text-2xl font-bold text-primary dark:text-blue-400 mb-6 flex items-center">
-<span class="material-icons mr-3">menu_book</span> Undergraduate Researchers
+<span class="material-symbols-outlined mr-3">menu_book</span> Undergraduate Researchers
                 </h3>
 <div class="prose dark:prose-invert max-w-none text-gray-700 dark:text-gray-300">
 <p>
-                        UC Merced undergraduates are welcome to join the lab for research experience. We usually have projects involving PCB design, 3D printing, drone assembly, and embedded coding (Python/C++).
+                        UC Merced undergraduates are welcome to join the lab for research experience. We usually have projects involving cryptographic implementations, hardware security testing, and FPGA programming.
                     </p>
 <ul class="list-disc pl-5 space-y-2 marker:text-primary dark:marker:text-blue-400">
 <li>Minimum commitment of <strong>10 hours/week</strong> is expected.</li>
-<li>Prior coursework in embedded systems or machine learning is a plus.</li>
+<li>Prior coursework in computer architecture, digital logic, or security is a plus.</li>
 <li>Opportunities to co-author papers and attend conferences.</li>
 </ul>
 <p class="mt-4">
@@ -157,7 +132,7 @@
 <hr class="border-gray-200 dark:border-gray-700"/>
 <section>
 <h3 class="text-2xl font-bold text-primary dark:text-blue-400 mb-6 flex items-center">
-<span class="material-icons mr-3">flight_takeoff</span> Visiting Students &amp; Scholars
+<span class="material-symbols-outlined mr-3">flight_takeoff</span> Visiting Students &amp; Scholars
                 </h3>
 <div class="prose dark:prose-invert max-w-none text-gray-700 dark:text-gray-300">
 <p>
@@ -174,20 +149,20 @@
 <span class="material-symbols-outlined mr-2">person</span> Contact PI
                     </h4>
 <div class="flex items-center mb-6">
-<img alt="Portrait of Dr. Xiaofan Yu" class="w-16 h-16 rounded-full object-cover border-2 border-gray-200 dark:border-gray-600 mr-4 shadow-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6uUZjpErYgX4w__zo0nbakqWeEO4RzgEeCxrqb7GYA87SMI8PUpWbck_e26ffOoP7z0XMxX4ZqLag2W3Yb6tb8cIMN7Lk7ehrdGHaG5JhBXn8RqTFYhUduK0hgqt0RkbWtv3d0afBV5lDts9Ak8l264MiHSXxmlgEl0jCr4BY35rn0Y3fEWNi2z5YEwdJBr6DzHSWRNCaMYZG4RcMHYprc_Tz1dKCOCIl9SOPZVtHfgeXlgOCIu7BB1yt-ZHVxaisaRfD2Hj_tgk"/>
+<img alt="Portrait of Dr. Qian Wang" class="w-16 h-16 rounded-full object-cover border-2 border-gray-200 dark:border-gray-600 mr-4 shadow-sm" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop"/>
 <div>
-<p class="font-bold text-gray-900 dark:text-white">Dr. Xiaofan Yu</p>
+<p class="font-bold text-gray-900 dark:text-white">Dr. Qian Wang</p>
 <p class="text-xs text-gray-500 dark:text-gray-400 uppercase tracking-wide">Assistant Professor, EE</p>
 </div>
 </div>
 <div class="space-y-3 text-sm">
 <div class="flex items-start">
-<span class="material-icons text-gray-400 text-sm mr-2 mt-0.5">email</span>
-<a class="text-primary hover:text-secondary dark:text-blue-400 transition-colors break-all font-medium" href="mailto:xiaofanyu@ucmerced.edu">xiaofanyu@ucmerced.edu</a>
+<span class="material-symbols-outlined text-gray-400 text-sm mr-2 mt-0.5">email</span>
+<a class="text-primary hover:text-secondary dark:text-blue-400 transition-colors break-all font-medium" href="mailto:qwang@ucmerced.edu">qwang@ucmerced.edu</a>
 </div>
 <div class="flex items-start">
-<span class="material-icons text-gray-400 text-sm mr-2 mt-0.5">location_on</span>
-<span class="text-gray-600 dark:text-gray-400">Science and Engineering 2, Room 382</span>
+<span class="material-symbols-outlined text-gray-400 text-sm mr-2 mt-0.5">location_on</span>
+<span class="text-gray-600 dark:text-gray-400">University of California, Merced</span>
 </div>
 </div>
 </div>
@@ -196,17 +171,30 @@
 <div class="h-2 bg-primary"></div>
 <div class="p-6">
 <h4 class="text-lg font-bold text-gray-900 dark:text-white mb-4 flex items-center">
-<span class="material-symbols-outlined mr-2">science</span> Environment
+<span class="material-symbols-outlined mr-2">science</span> Research Areas
                     </h4>
-<div class="grid grid-cols-2 gap-2 mb-4">
-<img alt="Lab equipment close up" class="rounded bg-gray-100 h-20 w-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMITZ5IEwBa1WSiQJSBqezxXJeyNFTBclTVvWjIkIGEzSUKDIvl5VuhJqG6c9iXN2A-Y-hJGnvfBvvHvy4VIYpwaRfkBJ0wHjfCpnYwioSajH68wv5fDhypDCXz93MbmB1B8yUVvi3Q8Sdh6_EIPTSmj8POF6TxNHiA3ZLzeks8ErfQWFF8ypEDPUcpR13Lo9EWBMbB8HmRU3AhpRTitICGBkmPzzOrlMZYCxK-pHQ6Kjswxua3c7MYjNMsfY_H3HAluNfMwmr21A"/>
-<img alt="Students collaborating" class="rounded bg-gray-100 h-20 w-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB30CqD5b0U_Dany6XBVWKY4T1JReAQU353wXyuB4gl9d2H_3fsQfl53_JTDfyFGMgxEOROoVD1jWo5p89Y6dw2hHb7NHXgf1udhzfYVg_-tHQ0NC6ZfVGUOW0niJvQc6H9Io96h8WVDYOlqGnI8dQioA_8AIFbuVPtIvrnOjvBJzHRisIyg5EFT6OK-mWfsxWE6Uh_C2zyl4g3lPnSowErxSReQrCcIcd8Pu-SbGuIb5N8V5yHL5Hy8hoDep0JH_UUv1tFcau8MdY"/>
-<img alt="Whiteboard brainstorming" class="rounded bg-gray-100 h-20 w-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCOG1WvwVwmTi3_pkXYAjnNuKXVKo9-M_MQaSWsCtga3-BfK35Li-ldi92Gj4SLtFkXhF9iBtQrgwPw85sDOQMV958mKZHEtWAcG0Lg92Cz90JhKPM3paM2vYzI609TZIUfmLPMeaOy-ptG04PwkjyQ8wmi2MGX_gdaQUhC5swlYCHMC5k4dBaaHcyIqCmwxC1MFF5Ngqbx5QCxXi9T4HyUD8_tZEWHIJtIiB572Tx8G-X-WAenRXqJCho-nbR-3iT2d7qPR_lW2E"/>
-<img alt="Electronic components" class="rounded bg-gray-100 h-20 w-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCT0MyQ7pNjJ_2aGygyJYZB4zr6myqAIPb1mt1NyCrneuObFJyMAnxmAZyXw8vksOToxuz3JroYRCUwog9gE7t6GeRfsH0ispTvODH-L8pIpT2frEjD0jXBctpk4whSSI4d9_Y9wuvNOgsxknsh9XnVq6qAfxqzlcK4pVdlNn_VjhtSf_GqNtDL3n5UQpcOIS8ygt2Pdmi2lwIxOoWnLlVM9EutEbA1F49F_DXdJV-FIvdIchpQaLKBwzawhqGkof8oSHvwVUqfhHQ"/>
-</div>
-<p class="text-sm text-gray-600 dark:text-gray-400">
-                        Our lab is equipped with state-of-the-art embedded platforms (NVIDIA Jetson, FPGA), drones, and various sensors.
-                    </p>
+<ul class="space-y-2 text-sm text-gray-600 dark:text-gray-400">
+<li class="flex items-start">
+<span class="material-symbols-outlined text-secondary text-sm mr-2">chevron_right</span>
+<span>Post-Quantum Cryptography</span>
+</li>
+<li class="flex items-start">
+<span class="material-symbols-outlined text-secondary text-sm mr-2">chevron_right</span>
+<span>Hardware Security Primitives (PUF, NTT, FHE)</span>
+</li>
+<li class="flex items-start">
+<span class="material-symbols-outlined text-secondary text-sm mr-2">chevron_right</span>
+<span>Quantum Circuit IP Protection</span>
+</li>
+<li class="flex items-start">
+<span class="material-symbols-outlined text-secondary text-sm mr-2">chevron_right</span>
+<span>Side-Channel Analysis</span>
+</li>
+<li class="flex items-start">
+<span class="material-symbols-outlined text-secondary text-sm mr-2">chevron_right</span>
+<span>Confidential Computing</span>
+</li>
+</ul>
 </div>
 </div>
 <div class="bg-surface-light dark:bg-surface-dark rounded-xl shadow-lg border border-gray-100 dark:border-gray-700 overflow-hidden">
@@ -218,19 +206,19 @@
 <ul class="space-y-3">
 <li>
 <a class="flex items-center text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-blue-400 transition-colors text-sm group" href="#">
-<span class="material-icons text-sm mr-2 text-gray-400 group-hover:text-secondary">open_in_new</span>
+<span class="material-symbols-outlined text-sm mr-2 text-gray-400 group-hover:text-secondary">open_in_new</span>
 <span>UC Merced Graduate Division</span>
 </a>
 </li>
 <li>
 <a class="flex items-center text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-blue-400 transition-colors text-sm group" href="#">
-<span class="material-icons text-sm mr-2 text-gray-400 group-hover:text-secondary">open_in_new</span>
+<span class="material-symbols-outlined text-sm mr-2 text-gray-400 group-hover:text-secondary">open_in_new</span>
 <span>Electrical Engineering Dept</span>
 </a>
 </li>
 <li>
 <a class="flex items-center text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-blue-400 transition-colors text-sm group" href="#">
-<span class="material-icons text-sm mr-2 text-gray-400 group-hover:text-secondary">open_in_new</span>
+<span class="material-symbols-outlined text-sm mr-2 text-gray-400 group-hover:text-secondary">open_in_new</span>
 <span>Merced Lifestyle Guide</span>
 </a>
 </li>
@@ -242,10 +230,13 @@
 </main>
 <footer class="bg-primary text-white border-t-4 border-secondary py-10 mt-auto">
 <div class="container mx-auto px-4 md:px-8 text-center">
-<h5 class="text-xl font-bold mb-2 tracking-wide">YuCCA Lab</h5>
-<p class="text-sm text-gray-300 mb-4">Yu's Cognitive Computing and Automation Lab</p>
+<div class="flex items-center justify-center gap-2 mb-2">
+<span class="material-symbols-outlined text-secondary">forest</span>
+<h5 class="text-xl font-bold tracking-wide">Sequoia Lab</h5>
+</div>
+<p class="text-sm text-gray-300 mb-4">Secure Quantum-era Integrated Architecture Lab</p>
 <div class="text-xs text-gray-400 border-t border-white/20 pt-4 mt-4 w-48 mx-auto">
-<p>© 2026 YuCCA Lab.</p>
+<p>© 2026 Sequoia Lab.</p>
 <p>University of California, Merced</p>
 </div>
 </div>
